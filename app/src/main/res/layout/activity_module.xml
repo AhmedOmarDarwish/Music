@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Module"
+    tools:ignore="MissingDefaultResource">
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/band" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_track" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="24K " />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            style="@style/ic"
+            android:id="@+id/rewind"
+            android:src="@drawable/ic_fast_rewind_black_24dp" />
+
+        <ImageButton
+            style="@style/ic"
+            android:id="@+id/play"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
+
+        <ImageButton
+            style="@style/ic"
+            android:id="@+id/pause"
+            android:src="@drawable/ic_pause_black_24dp" />
+
+        <ImageButton
+            style="@style/ic"
+            android:id="@+id/stop"
+            android:src="@drawable/ic_stop_black_24dp" />
+
+        <ImageButton
+            style="@style/ic"
+            android:id="@+id/fast_forward"
+            android:src="@drawable/ic_fast_forward_black_24dp" />
+
+    </LinearLayout>
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:progress="20" />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/list_item">
+
+    </ListView>
+
+</LinearLayout>
