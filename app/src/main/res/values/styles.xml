@@ -1,22 +1,94 @@
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools">
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.Light">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
     </style>
+
     <style name="mainimage">
         <item name="android:layout_width">match_parent</item>
-        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_height">@dimen/mainimage</item>
         <item name="android:layout_weight">1</item>
         <item name="android:scaleType">fitXY</item>
     </style>
+
     <style name="ic">
         <item name="android:scaleType">fitXY</item>
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
     </style>
 
+    <style name="llplay">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="rep">
+        <item name="android:layout_width">40dp</item>
+        <item name="android:layout_height">40dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginRight">20dp</item>
+        <item name="android:src">@drawable/rep</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="like">
+        <item name="android:layout_width">@dimen/like</item>
+        <item name="android:layout_height">@dimen/like</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">20dp</item>
+        <item name="android:src">@drawable/like</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="move">
+        <item name="android:layout_width">@dimen/move</item>
+        <item name="android:layout_height">@dimen/move</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="play">
+        <item name="android:layout_width">@dimen/play</item>
+        <item name="android:layout_height">@dimen/play</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginLeft">10dp</item>
+        <item name="android:layout_marginRight">10dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+
+    <style name="songjpg">
+        <item name="android:layout_width">@dimen/songjpg</item>
+        <item name="android:layout_height">@dimen/songjpg</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:src">@drawable/ic_headset_black_24dp</item>
+        <item name="android:scaleType">fitXY</item>
+    </style>
+    <style name="back">
+        <item name="android:layout_width">@dimen/back</item>
+        <item name="android:layout_height">@dimen/back</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background" tools:ignore="PrivateResource">@color/background_material_light</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:layout_marginLeft">10dp</item>
+       <item name="android:src">@drawable/buttonback</item>
+    </style>
+    <style name="home">
+        <item name="android:layout_width">@dimen/back</item>
+        <item name="android:layout_height">@dimen/back</item>
+        <item name="android:scaleType">fitXY</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:background" tools:ignore="PrivateResource">@color/background_material_light</item>
+        <item name="android:layout_marginTop">1dp</item>
+        <item name="android:src">@drawable/homebutton</item>
+    </style>
 </resources>

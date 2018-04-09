@@ -1,82 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".Module"
     tools:ignore="MissingDefaultResource">
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        android:scaleType="fitXY"
-        android:src="@drawable/band" />
+
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back"
+            style="@style/back"
+            android:src="@drawable/buttonback"
+            android:contentDescription="@string/back" />
 
         <ImageView
             android:layout_width="32dp"
             android:layout_height="32dp"
             android:layout_gravity="center"
+            android:layout_marginLeft="80dp"
             android:scaleType="centerCrop"
-            android:src="@drawable/ic_track" />
+            android:src="@drawable/ic_track"
+            />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="24K " />
+            android:text="24K Followers" />
 
 
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:orientation="horizontal">
-
-        <ImageButton
-            style="@style/ic"
-            android:id="@+id/rewind"
-            android:src="@drawable/ic_fast_rewind_black_24dp" />
-
-        <ImageButton
-            style="@style/ic"
-            android:id="@+id/play"
-            android:src="@drawable/ic_play_arrow_black_24dp" />
-
-        <ImageButton
-            style="@style/ic"
-            android:id="@+id/pause"
-            android:src="@drawable/ic_pause_black_24dp" />
-
-        <ImageButton
-            style="@style/ic"
-            android:id="@+id/stop"
-            android:src="@drawable/ic_stop_black_24dp" />
-
-        <ImageButton
-            style="@style/ic"
-            android:id="@+id/fast_forward"
-            android:src="@drawable/ic_fast_forward_black_24dp" />
-
-    </LinearLayout>
-
-    <SeekBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:progress="20" />
     <ListView
+        android:id="@+id/list_item"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/list_item">
+        android:layout_height="390dp"
+        android:layout_marginTop="10dp">
+
 
     </ListView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/colorPrimaryDark"
+        android:padding="2dp" />
+
+    <LinearLayout
+        style="@style/llplay"
+        android:padding="5dp">
+
+        <ImageView
+            android:id="@+id/song_play_icon"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginEnd="20dp"
+            android:layout_marginRight="20dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/ic_headset_black_24dp" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="@string/song_name"
+                android:textSize="20sp" />
+
+            <TextView
+                style="@style/llplay"
+                android:layout_gravity="center"
+                android:gravity="left"
+                android:text="@string/singer"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+
+        <ImageButton
+            android:id="@+id/play_pause"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_marginStart="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@color/background_material_light"
+            android:scaleType="fitXY"
+            android:src="@drawable/play"
+            tools:ignore="PrivateResource" />
+
+        <ImageButton
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:background="@color/background_material_light"
+            android:scaleType="fitXY"
+            android:src="@drawable/move_r" />
+
+
+    </LinearLayout>
+
 
 </LinearLayout>

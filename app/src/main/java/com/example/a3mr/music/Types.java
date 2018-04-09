@@ -1,19 +1,14 @@
 package com.example.a3mr.music;
 
-import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 
-public class Types extends AppCompatActivity {
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate( savedInstanceState );
-        setContentView( R.layout.activity_types );
+public class Types {
 
-    }
+
     private int imageid;
     private String imagename;
     private String music;
+
     public Types(String imgname, String mus, int imgid) {
         imageid = imgid;
         imagename = imgname;

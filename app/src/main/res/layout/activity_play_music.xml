@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".PlayMusic">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/back2"
+            style="@style/back"
+
+            />
+
+        <ImageButton
+            android:id="@+id/home"
+            style="@style/home"
+            android:layout_gravity="center"
+            android:layout_marginStart="@dimen/homemarginleft"
+            android:layout_marginLeft="@dimen/homemarginleft"
+            android:layout_marginEnd="10dp"
+            android:layout_marginRight="10dp" />
+
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/songname"
+        style="@style/llplay"
+        android:layout_marginTop="2dp"
+        android:fontFamily="serif"
+        android:text="@string/song_name"
+        android:textSize="@dimen/songname" />
+
+    <TextView
+        android:id="@+id/singer"
+        style="@style/llplay"
+        android:text="@string/singer"
+        android:textSize="@dimen/singer" />
+
+    <LinearLayout style="@style/llplay">
+
+        <ImageView
+            style="@style/ic"
+            android:src="@drawable/ic_volume_up_black_24dp" />
+
+        <SeekBar
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:progress="70" />
+
+    </LinearLayout>
+
+    <ImageView style="@style/songjpg" />
+
+    <LinearLayout style="@style/llplay">
+
+        <TextView
+            style="@style/ic"
+            android:text="@string/_00_00" />
+
+        <SeekBar
+            android:layout_width="280dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginRight="3dp"
+            android:progress="0" />
+
+        <TextView
+            android:id="@+id/songtime"
+            style="@style/ic"
+            android:text="@string/_00_00" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        style="@style/llplay"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <ImageButton
+            style="@style/rep"
+            android:background="@color/textcolor" />
+
+        <ImageButton
+            style="@style/move"
+            android:background="@color/textcolor"
+            android:src="@drawable/move_l" />
+
+        <ImageButton
+            android:id="@+id/play_pause2"
+            style="@style/play"
+            android:background="@color/background_material_light"
+            android:src="@drawable/play"
+            tools:ignore="PrivateResource" />
+
+        <ImageButton
+            style="@style/move"
+            android:background="@color/textcolor"
+            android:src="@drawable/move_r" />
+
+        <ImageButton
+            style="@style/like"
+            android:background="@color/textcolor" />
+
+    </LinearLayout>
+
+</LinearLayout>

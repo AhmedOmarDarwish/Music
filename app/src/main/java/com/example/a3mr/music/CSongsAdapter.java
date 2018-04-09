@@ -23,13 +23,13 @@ public class CSongsAdapter extends ArrayAdapter {
                     R.layout.activity_songs, parent, false );
         }
         Songs currentSongsAdapter = (Songs) getItem( position );
-        TextView songname = listItemView.findViewById( R.id.song_name);
+        TextView songname = listItemView.findViewById( R.id.song_name );
         songname.setText( currentSongsAdapter.getSongname() );
 
-        TextView songtime =  listItemView.findViewById( R.id.song_time );
+        TextView songtime = listItemView.findViewById( R.id.song_time );
         songtime.setText( currentSongsAdapter.getSongtime() );
 
-        ImageView songicon =  listItemView.findViewById( R.id.song_icon );
+        ImageView songicon = listItemView.findViewById( R.id.song_icon );
         songicon.setImageResource( currentSongsAdapter.getSongicon() );
         return listItemView;
     }
