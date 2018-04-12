@@ -11,16 +11,14 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".MainActivity"
-            android:label="Songs Types">
+        <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".Types" />
+        <activity android:name=".Types" />
 
         <meta-data
             android:name="preloaded_fonts"
@@ -28,11 +26,11 @@
 
         <activity
             android:name=".Module"
-            android:label="Songs List" />
+            android:label="@string/songsList" />
         <activity android:name=".Songs" />
         <activity
             android:name=".PlayMusic"
-            android:label="Playing Now" />
+            android:label="@string/playingNow" />
     </application>
 
 </manifest>
