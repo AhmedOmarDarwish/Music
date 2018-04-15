@@ -26,6 +26,9 @@ public class CSongsAdapter extends ArrayAdapter {
         TextView songname = listItemView.findViewById( R.id.song_name );
         songname.setText( currentSongsAdapter.getSongname() );
 
+        TextView singername = listItemView.findViewById( R.id.singer_name );
+        singername.setText( currentSongsAdapter.getSinger() );
+
         TextView songtime = listItemView.findViewById( R.id.song_time );
         songtime.setText( currentSongsAdapter.getSongtime() );
 

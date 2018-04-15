@@ -26,11 +26,13 @@
 
         <activity
             android:name=".Module"
-            android:label="@string/songsList" />
+            android:label="@string/songsList"
+            android:parentActivityName=""/>
         <activity android:name=".Songs" />
         <activity
             android:name=".PlayMusic"
-            android:label="@string/playingNow" />
+            android:label="@string/playingNow"
+            android:parentActivityName=".Module"/>
     </application>
 
 </manifest>
